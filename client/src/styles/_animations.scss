@@ -1,0 +1,85 @@
+@keyframes Bg-grade-light {
+    0% {
+      /*background-color: #ce8994;*/
+      background-color: #aa575e;
+    }
+    25%{
+      background-color: #919191;
+    }
+    50% {
+      background-color: #bb5dbb;
+    }
+    75% {
+      background-color: #8e82b8;
+    }
+    100% {
+      background-color: #aa575e;
+    }
+  }
+
+  @keyframes Bg-grade-dark {
+    0% {
+      /*background-color: #ce8994;*/
+      background-color: #361768;
+    }
+    25%{
+      background-color: #333333;
+    }
+    50% {
+      background-color: #580f58;
+    }
+    75% {
+      background-color: #18144e;
+    }
+    100% {
+      background-color: #361768;
+    }
+  }
+
+  @keyframes triangle-grade {
+    0% {
+        border-top: 60px solid #aa575e;
+    }
+    25%{
+        border-top: 60px solid #919191;
+    }
+    50% {
+        border-top: 60px solid #bb5dbb;
+    }
+    75% {
+        border-top: 60px solid #8e82b8;
+    }
+    100% {
+        border-top: 60px solid #aa575e;
+    }
+}
+
+@keyframes draw-markup-vertical {
+    0% {
+        width: 0px;
+    }
+    10% {
+        width: calc(100% + 120px);
+    }
+    90% {
+        width: calc(100% + 120px);
+    }
+    100% {
+        width: 0px;
+    }
+}
+
+@keyframes draw-markup-horizontal {
+    0% {
+        height: 0px;
+    }
+    10% {
+        height: calc(100% + 80px);
+    }
+    90% {
+        height: calc(100% + 80px);
+    }
+    0% {
+        height: 0px;
+    }
+}

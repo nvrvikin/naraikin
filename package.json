@@ -1,0 +1,22 @@
+{
+  "name": "naraikin",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "client-install-build": "npm install --prefix client && npm build --prefix client",
+    "start": "node server.js --prefix api",
+    "server": "nodemon server.js --prefix api",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "prod": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "author": "Vladislav Naraikin",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "4.19.2"
+  },
+  "devDependencies": {
+    "concurrently": "8.2.2"
+  }
+}

@@ -1,0 +1,22 @@
+.logo{
+    //font-size: calc(24px + 3vmin);
+    //font-weight: 700;
+    margin-bottom: 2rem;
+    //padding: 20px 30px;
+    //border: solid 2px #ffffff;
+    z-index: 3;
+    width: 35%;
+    fill: #fafafa;
+}
+
+.logo-under{
+    display: none;
+    z-index: 3;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    font-family: 'Montserrat', sans-serif;
+
+    code {
+        
+    }
+}

@@ -1,0 +1,148 @@
+.social-links{
+    z-index: 3;
+    display: flex;
+    //margin-top: 20px; 
+    width: 30%;
+    justify-content: space-between;
+    color: #7e7e7e;
+    font-weight: 100;
+    padding: 16px 40px;
+    //border-radius: 100px;
+    background-color: #000000;
+    //box-shadow: 0px 15px 10px 0px #00000040;
+    position: relative;
+    //background-image: linear-gradient(90deg,#202020, #353535);
+
+    .social-links__markup {
+        position: absolute;
+        border-image: url('/img/markup-border.png');
+        border-color: #ffffff;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+        border-image-width: 1;
+        border-image-slice: 2;
+        border-image-repeat: repeat;
+        opacity: 0.3;
+        //background-color: #ffffff;
+        
+        &.social-links__markup_outer-top,
+        &.social-links__markup_inner-top,
+        &.social-links__markup_outer-bottom,
+        &.social-links__markup_inner-bottom {
+            left: 50%;
+            height: 1px;
+            //width: calc(100% + 60px);
+            width: 0px;
+            transform: translateX(-50%);
+            animation-name: draw-markup-vertical;
+        }
+
+        &.social-links__markup_outer-left,
+        &.social-links__markup_inner-left,
+        &.social-links__markup_outer-right,
+        &.social-links__markup_inner-right {
+            top: 50%;
+            //height: calc(100% + 40px);
+            animation-duration: 10s;
+            height: 0px;
+            width: 1px;
+            transform: translateY(-50%);
+            animation-name: draw-markup-horizontal;
+        }
+
+        //OUTER
+
+        &.social-links__markup_outer-top,
+        &.social-links__markup_outer-bottom,
+        &.social-links__markup_outer-left,
+        &.social-links__markup_outer-right {
+            opacity: 0.7;
+        }
+
+        &.social-links__markup_outer-top {
+            border-top-width: 2px;
+            border-top-style: solid;
+            top: -20px;
+            animation-delay: .5s;
+        }
+        
+        &.social-links__markup_outer-bottom {
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+            bottom: -20px;
+            animation-delay: 1.5s;
+        }
+        
+        &.social-links__markup_outer-left {
+            border-left-width: 2px;
+            border-left-style: solid;
+            left: -20px;
+            animation-delay: 1s;
+        }
+        
+        &.social-links__markup_outer-right {
+            border-right-width: 2px;
+            border-right-style: solid;
+            right: -20px;
+            animation-delay: 2s;
+        }
+
+        //INNER
+
+        &.social-links__markup_inner-top {
+            border-top-width: 2px;
+            border-top-style: solid;
+            top: -2px;
+            animation-delay: 2.5s;
+        }
+        
+        &.social-links__markup_inner-bottom {
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+            bottom: -2px;
+            animation-delay: 3.5s;
+        }
+        
+        &.social-links__markup_inner-left {
+            border-left-width: 2px;
+            border-left-style: solid;
+            left: -2px;
+            animation-delay: 3s;
+        }
+        
+        &.social-links__markup_inner-right {
+            border-right-width: 2px;
+            border-right-style: solid;
+            right: -2px;
+            animation-delay: 4s;
+        }
+    }
+}
+
+.icon-link{
+    text-decoration: none;
+    transition: .5s;
+    
+    &.icon-link_git {
+        color: #861cff;
+        text-shadow: 5px 5px 10px #7700ffa1;
+    }
+    
+    &.icon-link_instagram {
+        color: #e08e2f;
+        text-shadow: 5px 5px 10px #e66d2788;
+    }
+    
+    &.icon-link_vk {
+        color: #2679c7;
+        text-shadow: 5px 5px 10px #0084ff88;
+    }
+    
+    &:hover{
+        color: #ffffff;
+        text-shadow: 5px 5px 20px #ffffff7e;
+        transition: .5s;
+    }
+}
