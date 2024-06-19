@@ -1,7 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
-import { Routes, Route, useLocation, Link, NavLink } from 'react-router-dom'
+import { Routes, Route, useLocation, Link } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import IndexWrapper from '../components/index/IndexWrapper'
 import IndexParticles from '../components/index/IndexParticles'

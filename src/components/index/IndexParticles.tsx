@@ -1,7 +1,5 @@
-import React, { useCallback, useState, useEffect } from 'react'
-import PropTypes from 'prop-types'
+import { useState, useEffect } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
-import type { Container, Engine } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import particlesParams from '../../config/index-particles-params';
 
@@ -16,9 +14,11 @@ function IndexParticles() {
     })
   }, [])
 
+  /*
   const particlesLoaded = (container: any) => {
     console.log(container)
   }
+  */
 
   return (
     <>

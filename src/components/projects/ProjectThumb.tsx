@@ -1,12 +1,13 @@
-import React, { useEffect, useRef, useState, useContext } from 'react'
-import { LangContext } from '../../contexts/LangContext';
-import PropTypes from 'prop-types'
+import { useEffect, useRef, useState, /*useContext*/ } from 'react'
+//import { LangContext } from '../../contexts/LangContext';
 import { Link } from 'react-router-dom';
-import langList from '../../data/langList';
+//import langList from '../../data/langList';
 
+/*
 interface ProjectThumpProps {
 
 }
+*/
 
 function ProjectThumb() {
     const tagsUlRef = useRef(null);
@@ -14,36 +15,36 @@ function ProjectThumb() {
     const titleBoxRef = useRef(null);
     const titleRef = useRef(null);
 
-    const { lang, updateLang } = useContext(LangContext)
+    /*const { lang, updateLang } = useContext(LangContext)*/
 
-    const [title, setTitle] = useState('...');
-    const [description, setDescription] = useState('...');
-    const [link, setLink] = useState('#');
-    const [isExternalLink, setIsExternalLink] = useState(false);
-    const [image, setImage] = useState(null);
-    const [tags, setTags] = useState([]);
+    const [title, /*setTitle*/] = useState('...');
+    const [description, /*setDescription*/] = useState('...');
+    const [link, /*setLink*/] = useState('#');
+    const [isExternalLink, /*setIsExternalLink*/] = useState(false);
+    const [image, /*setImage*/] = useState(null);
+    const [tags, /*setTags*/] = useState([]);
 
-    const [isHidden, setIsHidden] = useState(false);
+    const [isHidden, /*setIsHidden*/] = useState(false);
 
     const [showImage, setShowImage] = useState(false);
     
-    const [showInfo, setShowInfo] = useState(false);
-    const [currentInfo, setCurrentInfo] = useState('');
+    const [showInfo, /*setShowInfo*/] = useState(false);
+    const [currentInfo, /*setCurrentInfo*/] = useState('');
 
-    const [shortTitle, setShortTitle] = useState('...');
-    const [currentTitle, setCurrentTitle] = useState('...');
+    /*const [shortTitle, setShortTitle] = useState('...');*/
+    const [currentTitle, /*setCurrentTitle*/] = useState('...');
 
     const [offsetTitle, setOffsetTitle] = useState(0);
     const [isOver, setIsOver] = useState(false);
-    const [canMoveTitle, setCanMoveTitle] = useState(false);
+    const [canMoveTitle, /*setCanMoveTitle*/] = useState(false);
     
-    const [canForth, setCanForth] = useState(true);
-    const [canBack, setCanBack] = useState(true);
+    const [canForth, /*setCanForth*/] = useState(true);
+    const [canBack, /*setCanBack*/] = useState(true);
     const [offsetTags, setOffsetTags] = useState(0);
-    const [ulWidth, setUlWidth] = useState(0);
-    const [containerWidth, setContainerWidth] = useState(0);
+    const [ulWidth, /*setUlWidth*/] = useState(0);
+    const [containerWidth, /*setContainerWidth*/] = useState(0);
 
-    const [offsetStep, setOffsetStep] = useState(150);
+    const [offsetStep, /*setOffsetStep*/] = useState(150);
 
     function handleMouseEnter () {
         setIsOver(true);
@@ -87,7 +88,8 @@ function ProjectThumb() {
 
         if(tags) {
             return tags.map((tag, idx) => {
-                let tagLang;
+                console.log(tag)
+                /*let tagLang;
                 switch(lang) {
                     case langList.ru:
                         tagLang = tag.ru
@@ -98,13 +100,14 @@ function ProjectThumb() {
                     default:
                         tagLang = tag.eng
                         break;
-                }
+                }*/
                 return (
                     <li key={idx}
                         className='project-thumb__tag'
                         //onMouseEnter={ () => handleTagMouseEnter(tagLang.info) }
                         //onMouseLeave={ handleTagMouseLeave }
-                        > {tagLang.value}
+                        > 
+                        { "Тэг"/*tagLang.value*/}
                     </li>
                 )
             });

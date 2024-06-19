@@ -1,6 +1,3 @@
-import React, {
-	Fragment
-} from 'react';
 import TagsList from './tagsList';
 
 //import RacksThumbImg from "../public/img/projects/racks/racks-thumb.png";
@@ -31,9 +28,9 @@ const ProjectsList = [
 		id: 1,
 		title: 'Snow landing',
 		description:
-			<Fragment>
+			<>
 				Вёрстка бесплатного шаблона лендинга Snow от <a href = "http://designscrazed.org/" > Designscrazed </a>
-			</Fragment>,
+			</>,
 		link: "/projects/snow",
 		isExternalLink: false,
 		//image: SnowThumbImg,

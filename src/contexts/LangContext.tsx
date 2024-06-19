@@ -5,7 +5,7 @@ import langList from '../data/langList'
 
 
 export interface ILangContext {
-    lang?: (newTheme: string) => void,
+    lang?: string,
     updateLang?: (newTheme: string) => void,
 }
 
@@ -29,11 +29,12 @@ function LangProvider({ children }: { children: React.ReactNode }) {
 
     useEffect(() => {
         document.documentElement.setAttribute('lang', lang);
-        langList.forEach(c => {
-            if(lang === c.value) {
-                //setHomeImage(c.home_image)
-            }
-        })
+        if(lang === langList.ru.value) {
+            //setHomeImage(c.home_image)
+        }
+        else {
+
+        }
     }, [lang])
 
     const updateLang = (newLang: string) => {

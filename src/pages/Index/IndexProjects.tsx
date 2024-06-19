@@ -1,5 +1,3 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import IndexLayout from '../../components/index/IndexLayout'
 import { Helmet } from 'react-helmet'
 
