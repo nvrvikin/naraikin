@@ -10,6 +10,11 @@ function IndexNavigation() {
       </NavLink>
       <NavLink
         className='index-navigation__button'
+        to='/about'>
+        Обо мне
+      </NavLink>
+      <NavLink
+        className='index-navigation__button'
         to='/projects'>
         Проекты
       </NavLink>
@@ -18,16 +23,7 @@ function IndexNavigation() {
         to='/stack'>
         Технологии
       </NavLink>
-      <NavLink
-        className='index-navigation__button'
-        to='four'>
-        Десятое
-      </NavLink>
-      <NavLink
-        className='index-navigation__button'
-        to='/about'>
-        Обо мне
-      </NavLink>
+
     </nav>
   )
 }

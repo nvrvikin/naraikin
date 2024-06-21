@@ -25,7 +25,7 @@ function IndexMain() {
     		  	  	href="https://github.com/nvrvikin"
     		  	  	target="_blank"
     		  	  	rel="noopener noreferrer">
-    		  	  	&nbsp; GitHub
+    		  	  	GitHub
     		  	</a>
     		  	|
     		  	<a
@@ -33,7 +33,7 @@ function IndexMain() {
     		  	  	href="https://vk.com/nvrvikin"
     		  	  	target="_blank"
     		  	  	rel="noopener noreferrer">
-    		  	  	&nbsp; VK
+    		  	  	VK
     		  	</a>
     		  	|
     		  	<a
@@ -41,7 +41,7 @@ function IndexMain() {
     		  	  	href="https://t.me/nvrvikin/"
     		  	  	target="_blank"
     		  	  	rel="noopener noreferrer">
-    		  	  	&nbsp; Instagram
+    		  		Telegram
     		  	</a>
     		</div>
       </IndexLayout>

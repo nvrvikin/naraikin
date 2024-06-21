@@ -38,8 +38,8 @@ function Index() {
                   key={location.key}>
                   <Routes location={location}>
                     <Route path="/" element={ <IndexMain /> } />
-                    <Route path="/projects" element={ <IndexProjects /> } />
                     <Route path="/about" element={ <IndexAbout /> } />
+                    <Route path="/projects" element={ <IndexProjects /> } />
                   </Routes>
                     </CSSTransition>
               </TransitionGroup>

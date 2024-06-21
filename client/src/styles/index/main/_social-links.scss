@@ -123,16 +123,21 @@
 
 .icon-link{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
     transition: .5s;
+    font-weight: 500;
     
     &.icon-link_git {
         color: #861cff;
         text-shadow: 5px 5px 10px #7700ffa1;
     }
     
-    &.icon-link_instagram {
-        color: #e08e2f;
-        text-shadow: 5px 5px 10px #e66d2788;
+    &.icon-link_tg {
+        color: #2f4fe0;
+        text-shadow: 5px 5px 10px #278ae688;
     }
     
     &.icon-link_vk {
@@ -143,6 +148,5 @@
     &:hover{
         color: #ffffff;
         text-shadow: 5px 5px 20px #ffffff7e;
-        transition: .5s;
     }
 }

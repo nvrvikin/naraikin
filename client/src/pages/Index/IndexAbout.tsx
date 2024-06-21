@@ -6,12 +6,13 @@ import CrossThinIcon from '../../components/Icons/CrossThinIcon'
 import MyPhotoOriginalImg from "/img/meph3.jpg";
 import MyPhotoOverdrivenImg from "/img/meph2.jpg";
 import CircleIcon from '../../components/Icons/CircleIcon'
+import { aboutText } from '../../data/pageText';
 
 function IndexAbout() {
   return (
     <>
         <Helmet>
-            <title>NVRVIKIN | Обо мне</title>
+            <title>NVRVIKIN | {aboutText.pageTitle.ru}</title>
         </Helmet>
         <IndexLayout>
             <div className="about">
@@ -34,13 +35,14 @@ function IndexAbout() {
 		        	<CircleIcon className='about-text__circle about-text__circle_first' />
 		        	<CircleIcon className='about-text__circle about-text__circle_second' />
                     <h1 className="about__title">
-                        Обо мне
-                    </h1>
+                        { aboutText.title.ru }
+                    </h1 >
+                    <h2 className="about__position">{ aboutText.position.ru }</h2>
                     <p className="about__info">
-                        Привет! Я не дурак!
+                        { aboutText.description.ru }
                     </p>
                     <span className="about__hint">
-                        Возьмите работать
+                        теги
                     </span>
                 </div>
             </div>
