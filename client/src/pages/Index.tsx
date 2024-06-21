@@ -8,6 +8,7 @@ import IndexMain from './Index/IndexMain'
 import IndexProjects from './Index/IndexProjects'
 import IndexAbout from './Index/IndexAbout'
 import LangProvider from '../contexts/LangContext'
+import { commonText } from '../data/pageText'
 
 function Index() {
   let location = useLocation()
@@ -16,7 +17,7 @@ function Index() {
     <>
         <Helmet>
             <meta charSet="utf-8" />
-            <title>NVRVIKIN | Главная</title>
+            <title>{ commonText.websiteTitle }| Главная</title>
             <link
               href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Montserrat:400,700"
               rel="stylesheet"/>

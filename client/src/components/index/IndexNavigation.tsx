@@ -18,12 +18,6 @@ function IndexNavigation() {
         to='/projects'>
         Проекты
       </NavLink>
-      <NavLink
-        className='index-navigation__button'
-        to='/stack'>
-        Технологии
-      </NavLink>
-
     </nav>
   )
 }

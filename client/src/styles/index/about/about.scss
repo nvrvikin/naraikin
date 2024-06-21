@@ -66,13 +66,16 @@
     }
 
     .about__text-wrapper {
+        background-color: #43377ec4;
+        //border-radius: 3.5rem;
+        padding: 2rem 3rem;
         display: flex;
         position: relative;
-        height: 100%;
+        height: auto;
         //padding: 10px;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
+        justify-content: center;
         margin-left: 30px;
     }
 
@@ -102,11 +105,14 @@
     .about__title {
         padding: 0;
         margin: 0;
+        font-variant: small-caps;
         margin-top: 10px;
-        margin-bottom: 6px;
+        //margin-bottom: 6px;
+        font-weight: 500;
+        text-align: center;
         width: 100%;
         font-size: 2.5rem;
-        line-height: normal;
+        line-height: 2.4rem;
 
         small {
             margin: 0;
@@ -116,7 +122,11 @@
     }
 
     .about__position {
-        font-size: 1.5rem;
+        width: 100%;
+        color: #fafafae5;
+        text-align: center;
+        font-size: 1.2rem;
+        font-variant: small-caps;
         font-weight: 100;
         padding: 0;
         margin: 0;
@@ -125,16 +135,14 @@
     .about__info {
         padding: 0;
         margin: 0;
-        line-height: 2rem;
-        font-size: 16px;
+        line-height: 1.1rem;
+        font-size: 1rem;
         max-width: 500px;
         text-align: left;
 
         ul {
             list-style: none;
             width: 100%;
-            display: flex;
-            flex-direction: column;
             padding: 0;
 
             li {
@@ -152,16 +160,19 @@
 }
 
 .about-feature-link {
-    color: #ff3e58;
-    padding: 0 0.6rem;
-    padding-bottom: 0.1rem;
+    color: #b9ffe2;
+    font-variant: small-caps;
+    //padding: 0 0.6rem;
+    //padding-bottom: 0.1rem;
     text-align: center;
-    background-color: #1a1a1a;
-    border-radius: 1rem;
-    transition: .3s ease all;
+    //background-color: #fafafa;
+    //border-radius: 1rem;
+    transition: .2s ease all;
 
     &:hover {
         opacity: 0.8;
+        color: #57ffb9;
+
     }
 }
 

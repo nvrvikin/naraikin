@@ -41,9 +41,6 @@ function IndexAbout() {
                     <p className="about__info">
                         { aboutText.description.ru }
                     </p>
-                    <span className="about__hint">
-                        теги
-                    </span>
                 </div>
             </div>
         </IndexLayout>

@@ -8,7 +8,10 @@ function IndexProjects() {
         <title>NVRVIKIN | Проекты</title>  
       </Helmet>
       <IndexLayout>
-          <div>Тут будут проекты</div>
+          <div className="projects">
+            <span>Нет доступных выгруженных проектов</span>
+            <code>На воскрешение проектов потребуется время</code>
+          </div>
       </IndexLayout>
     </>
   )
