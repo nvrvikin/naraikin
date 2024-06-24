@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet'
 import CrossThickIcon from '../../components/Icons/CrossThickIcon'
 import CrossThinIcon from '../../components/Icons/CrossThinIcon'
 
-import MyPhotoOriginalImg from "/img/meph3.jpg";
-import MyPhotoOverdrivenImg from "/img/meph2.jpg";
+import MyPhotoOriginalImg from "/img/port.jpg";
+import MyPhotoOverdrivenImg from "/img/port_overlay.jpg";
 import CircleIcon from '../../components/Icons/CircleIcon'
 import { aboutText } from '../../data/pageText';
 

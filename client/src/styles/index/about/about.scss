@@ -5,6 +5,17 @@
     //flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    @include phone {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
 
     .about__my-photo-container {
         position: relative;
@@ -61,6 +72,15 @@
             &:hover {
                 opacity: 0;
             }
+            @include phone {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        @include phone {
+            position: relative;
         }
         //background-color: #f4a;
     }
@@ -72,11 +92,18 @@
         display: flex;
         position: relative;
         height: auto;
+        max-height: 80vh;
         //padding: 10px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-left: 30px;
+
+        @include phone {
+            padding: 1rem;
+            margin: 1.5rem;
+            margin-bottom: 5rem;
+        }
     }
 
     .about-text__circle {
@@ -106,13 +133,13 @@
         padding: 0;
         margin: 0;
         font-variant: small-caps;
-        margin-top: 10px;
+        margin-top: 1rem;
         //margin-bottom: 6px;
         font-weight: 500;
         text-align: center;
         width: 100%;
         font-size: 2.5rem;
-        line-height: 2.4rem;
+        line-height: 2.5rem;
 
         small {
             margin: 0;
@@ -130,15 +157,18 @@
         font-weight: 100;
         padding: 0;
         margin: 0;
+        margin-bottom: 1rem;
     }
 
     .about__info {
-        padding: 0;
+        padding: 0 0.5rem;
         margin: 0;
         line-height: 1.1rem;
         font-size: 1rem;
         max-width: 500px;
         text-align: left;
+        overflow-y: auto;
+        overflow-x: hidden;
 
         ul {
             list-style: none;
@@ -152,7 +182,7 @@
     }
 
     .about__hint{
-        font-size: 14px;
+        font-size: 1rem;
         width: 250px;
         letter-spacing: 3px;
 

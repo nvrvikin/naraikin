@@ -37,7 +37,7 @@ function LangProvider({ children }: { children: React.ReactNode }) {
         }
     }, [lang])
 
-    const updateLang = (newLang: string) => {
+    function updateLang(newLang: string): void {
         setLang(newLang)
         localStorage.setItem(STORAGE_KEY, newLang)
     }
