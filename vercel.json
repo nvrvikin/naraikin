@@ -1,5 +1,7 @@
 {
-    "rewrites": [
-        { "source": "/.*", "destination": "/" }
+    "routes": [
+        { "src": "/[^.]+",
+        "dest": "/client/dest/",
+        "status": 200 }
     ]
 }
