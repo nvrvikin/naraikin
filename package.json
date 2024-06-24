@@ -9,7 +9,7 @@
     "client-install": "npm install --prefix ./client",
     "install-all": "npm install && npm run client-install",
     "client-build": "npm run build --prefix client",
-    "start": "NODE_ENV=production node server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
