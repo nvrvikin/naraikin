@@ -1,7 +1,9 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { defineLangText, navText } from '../../data/pageText'
 
 function IndexNavigation() {
+  let location = useLocation();
+
   return (
     <nav className="index-navigation">
       <NavLink
