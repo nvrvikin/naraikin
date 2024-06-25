@@ -28,7 +28,7 @@ export const aboutText = {
     description: {
         ru: <>
             <ul>
-                <li># Знаком с <FeatureLink link="https://vuejs.org">Vue.js</FeatureLink>, в основном работаю с <FeatureLink link="https://react.dev">React</FeatureLink></li>
+                <li># Знаком с <FeatureLink link="https://vuejs.org">Vue.js</FeatureLink>. в основном работаю с <FeatureLink link="https://react.dev">React</FeatureLink></li>
                 <li># Совместно с <FeatureLink link="https://react.dev">React</FeatureLink> использую следующие фреймворки: <FeatureLink link="https://nextjs.org">Next.js</FeatureLink>, <FeatureLink link="https://redux.js.org">Redux</FeatureLink>.</li>
                 <li># Использую в работе <FeatureLink link="https://www.typescriptlang.org">TypeScript</FeatureLink> и <FeatureLink link="https://ecma-international.org/publications-and-standards/standards/ecma-262/">JavaScript</FeatureLink></li>
                 <li># В вёрстке использую <FeatureLink link="https://html.spec.whatwg.org/multipage/">HTML</FeatureLink>, <FeatureLink link="https://www.w3.org/Style/CSS/">CSS</FeatureLink>, чаще <FeatureLink link="https://sass-lang.com">SASS(SCSS)</FeatureLink></li>
@@ -43,7 +43,7 @@ export const aboutText = {
         </>,
         en: <>
             <ul>
-                <li># Знаком с <FeatureLink link="https://vuejs.org">Vue.js</FeatureLink>, в основном работаю с <FeatureLink link="https://react.dev">React</FeatureLink></li>
+                <li># Familiar with <FeatureLink link="https://vuejs.org">Vue.js</FeatureLink>, в основном работаю с <FeatureLink link="https://react.dev">React</FeatureLink></li>
                 <li># Совместно с <FeatureLink link="https://react.dev">React</FeatureLink> использую следующие фреймворки: <FeatureLink link="https://nextjs.org">Next.js</FeatureLink>, <FeatureLink link="https://redux.js.org">Redux</FeatureLink>.</li>
                 <li># Использую в работе <FeatureLink link="https://www.typescriptlang.org">TypeScript</FeatureLink> и <FeatureLink link="https://ecma-international.org/publications-and-standards/standards/ecma-262/">JavaScript</FeatureLink></li>
                 <li># В вёрстке использую <FeatureLink link="https://html.spec.whatwg.org/multipage/">HTML</FeatureLink>, <FeatureLink link="https://www.w3.org/Style/CSS/">CSS</FeatureLink>, чаще <FeatureLink link="https://sass-lang.com">SASS(SCSS)</FeatureLink></li>

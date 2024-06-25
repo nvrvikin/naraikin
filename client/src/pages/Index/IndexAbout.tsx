@@ -38,9 +38,9 @@ function IndexAbout() {
                         { aboutText.title.ru }
                     </h1 >
                     <h2 className="about__position">{ aboutText.position.ru }</h2>
-                    <p className="about__info">
+                    <div className="about__info">
                         { aboutText.description.ru }
-                    </p>
+                    </div>
                 </div>
             </div>
         </IndexLayout>

@@ -86,7 +86,7 @@
     }
 
     .about__text-wrapper {
-        background-color: #43377ec4;
+        background-color: #2a568fc4;
         //border-radius: 3.5rem;
         padding: 2rem 3rem;
         display: flex;
@@ -111,10 +111,14 @@
         fill: #ffffff;
         width: 50px;
         height: 50px;
-        top: 40px;
-        right: -60px;
+        top: 5rem;
+        right: -0.5rem;
         z-index: 5;
         animation: circle-pulse infinite 10s linear;
+
+        @include phone {
+
+        }
         
         &.about-text__circle_first {
             fill: #3dff9e;
