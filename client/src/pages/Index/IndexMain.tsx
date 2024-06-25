@@ -1,12 +1,13 @@
 import IndexLayout from '../../components/index/IndexLayout'
 import LogoIcon from '../../components/Icons/LogoIcon'
 import { Helmet } from 'react-helmet'
+import { defineLangText, mainText } from '../../data/pageText'
 
 function IndexMain() {
   return (
     <>
 		<Helmet>
-			<title>NVRVIKIN | Главная</title>
+			<title>NVRVIKIN | { defineLangText(mainText.pageTitle) }</title>
 		</Helmet>
 		<IndexLayout>
 			<LogoIcon className='logo' />

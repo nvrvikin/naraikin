@@ -6,13 +6,13 @@ import CrossThinIcon from '../../components/Icons/CrossThinIcon'
 import MyPhotoOriginalImg from "/img/port.jpg";
 import MyPhotoOverdrivenImg from "/img/port_overlay.jpg";
 import CircleIcon from '../../components/Icons/CircleIcon'
-import { aboutText } from '../../data/pageText';
+import { aboutText, defineLangText } from '../../data/pageText';
 
 function IndexAbout() {
   return (
     <>
         <Helmet>
-            <title>NVRVIKIN | {aboutText.pageTitle.ru}</title>
+            <title>NVRVIKIN | { defineLangText(aboutText.pageTitle) }</title>
         </Helmet>
         <IndexLayout>
             <div className="about">
@@ -35,11 +35,11 @@ function IndexAbout() {
 		        	<CircleIcon className='about-text__circle about-text__circle_first' />
 		        	<CircleIcon className='about-text__circle about-text__circle_second' />
                     <h1 className="about__title">
-                        { aboutText.title.ru }
+                        { defineLangText(aboutText.title) }
                     </h1 >
-                    <h2 className="about__position">{ aboutText.position.ru }</h2>
+                    <h2 className="about__position">{ defineLangText(aboutText.position) }</h2>
                     <div className="about__info">
-                        { aboutText.description.ru }
+                        { defineLangText(aboutText.description) }
                     </div>
                 </div>
             </div>

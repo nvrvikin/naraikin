@@ -1,16 +1,16 @@
 import IndexLayout from '../../components/index/IndexLayout'
 import { Helmet } from 'react-helmet'
+import { projectsText, defineLangText } from '../../data/pageText'
 
 function IndexProjects() {
   return (
     <>
       <Helmet>
-        <title>NVRVIKIN | Проекты</title>  
+        <title>NVRVIKIN | {defineLangText(projectsText.pageTitle)}</title>  
       </Helmet>
       <IndexLayout>
           <div className="projects">
-            <span>Нет доступных выгруженных проектов</span>
-            <code>На воскрешение проектов потребуется время</code>
+            { defineLangText(projectsText.hint) }
           </div>
       </IndexLayout>
     </>
