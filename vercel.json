@@ -1,15 +1,9 @@
 {
-    "routes": [
-        {
-            "src": "/[^.]+",
-            "dest": "/client/dest/index.html",
-            "status": 200
-        }
-    ],
+    "version": 2,
     "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "clсient/dest/index.html"
-        }
+      {
+        "source": "/(.*)",
+        "destination": "/client/dest/index.html"
+      }
     ]
 }
