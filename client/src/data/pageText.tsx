@@ -35,7 +35,7 @@ export const aboutText = {
                 <li># Совместно с <FeatureLink link="https://react.dev">React</FeatureLink> использую следующие фреймворки: <FeatureLink link="https://nextjs.org">Next.js</FeatureLink>, <FeatureLink link="https://redux.js.org">Redux</FeatureLink>.</li>
                 <li># Использую в работе <FeatureLink link="https://www.typescriptlang.org">TypeScript</FeatureLink> и <FeatureLink link="https://ecma-international.org/publications-and-standards/standards/ecma-262/">JavaScript</FeatureLink></li>
                 <li># В вёрстке использую <FeatureLink link="https://html.spec.whatwg.org/multipage/">HTML</FeatureLink>, <FeatureLink link="https://www.w3.org/Style/CSS/">CSS</FeatureLink>, чаще <FeatureLink link="https://sass-lang.com">SASS(SCSS)</FeatureLink></li>
-                <li># Владею <FeatureLink link="https://www.adobe.com/ru/products/photoshop.html">Adobe Photoshop</FeatureLink> и <FeatureLink link="https://www.adobe.com/products/illustrator.html">Adobe Illustrator</FeatureLink>, знаком с <FeatureLink link="https://www.figma.com">Figma</FeatureLink></li>
+                <li># Владею <FeatureLink link="https://www.adobe.com/ru/products/photoshop.html">Adobe Photoshop</FeatureLink>, <FeatureLink link="https://www.adobe.com/products/illustrator.html">Adobe Illustrator</FeatureLink>, <FeatureLink link="https://www.adobe.com/products/aftereffects.html">Adobe After Effects</FeatureLink> и <FeatureLink link="https://www.adobe.com/products/premiere.html"> Adobe Premiere Pro</FeatureLink>, знаком с <FeatureLink link="https://www.figma.com">Figma</FeatureLink></li>
                 <li># При работе с базами данных использовал <FeatureLink link="https://www.mongodb.com">MongoDB</FeatureLink>, <FeatureLink link="https://firebase.google.com/products/realtime-database">Firebase Realtime Database</FeatureLink> и <FeatureLink link="https://www.postgresql.org">PostgreSQL</FeatureLink></li>
                 <li># Имею опыт работы с веб-фреймворками <FeatureLink link="https://nodejs.org">NodeJS</FeatureLink>(<FeatureLink link="https://expressjs.com/ru/">express</FeatureLink>) и <FeatureLink link="https://www.djangoproject.com">Django</FeatureLink>. Могу создать сервер со следующим базовым функционалом: маршрутизация, <FeatureLink link="https://restfulapi.io">REST API</FeatureLink>, простая БД, взаимодействие с <FeatureLink link="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">cookies</FeatureLink></li>
                 <li># Применял в работе сервисы храниения данных Amazon(<FeatureLink link="https://docs.amazonaws.cn/en_us/AmazonS3/latest/userguide/Welcome.html">AWS S3</FeatureLink>) и <FeatureLink link="https://firebase.google.com/products/storage">Firebase Storage</FeatureLink></li>
@@ -48,11 +48,11 @@ export const aboutText = {
             <ul>
                 <li># Familiar with <FeatureLink link="https://vuejs.org">Vue.js</FeatureLink>. I'm working with <FeatureLink link="https://react.dev">React</FeatureLink>, mostly.</li>
                 <li># Combining <FeatureLink link="https://react.dev">React</FeatureLink> with the following frameworks: <FeatureLink link="https://nextjs.org">Next.js</FeatureLink> and <FeatureLink link="https://redux.js.org">Redux</FeatureLink>.</li>
-                <li># Using at work <FeatureLink link="https://www.typescriptlang.org">TypeScript</FeatureLink> and <FeatureLink link="https://ecma-international.org/publications-and-standards/standards/ecma-262/">JavaScript</FeatureLink></li>
+                <li># Using <FeatureLink link="https://www.typescriptlang.org">TypeScript</FeatureLink> and <FeatureLink link="https://ecma-international.org/publications-and-standards/standards/ecma-262/">JavaScript</FeatureLink> at work</li>
                 <li># Implementing a website layout, I use <FeatureLink link="https://html.spec.whatwg.org/multipage/">HTML</FeatureLink>, <FeatureLink link="https://www.w3.org/Style/CSS/">CSS</FeatureLink>, more often <FeatureLink link="https://sass-lang.com">SASS(SCSS)</FeatureLink></li>
-                <li># I am skilled in <FeatureLink link="https://www.adobe.com/ru/products/photoshop.html">Adobe Photoshop</FeatureLink> и <FeatureLink link="https://www.adobe.com/products/illustrator.html">Adobe Illustrator</FeatureLink>, familiar with <FeatureLink link="https://www.figma.com">Figma</FeatureLink></li>
-                <li># Working with databases, I have been using <FeatureLink link="https://www.mongodb.com">MongoDB</FeatureLink>, <FeatureLink link="https://firebase.google.com/products/realtime-database">Firebase Realtime Database</FeatureLink> и <FeatureLink link="https://www.postgresql.org">PostgreSQL</FeatureLink></li>
-                <li># I'm experienced working with such frameworks us <FeatureLink link="https://nodejs.org">NodeJS</FeatureLink>(<FeatureLink link="https://expressjs.com/ru/">express</FeatureLink>) and <FeatureLink link="https://www.djangoproject.com">Django</FeatureLink>. I can implement a server with the following base functionality: routing, <FeatureLink link="https://restfulapi.io">REST API</FeatureLink>, simple DB, interaction with <FeatureLink link="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">cookies</FeatureLink></li>
+                <li># I am skilled in <FeatureLink link="https://www.adobe.com/ru/products/photoshop.html">Adobe Photoshop</FeatureLink>, <FeatureLink link="https://www.adobe.com/products/illustrator.html">Adobe Illustrator</FeatureLink>, <FeatureLink link="https://www.adobe.com/products/aftereffects.html">Adobe After Effects</FeatureLink> and <FeatureLink link="https://www.adobe.com/products/premiere.html"> Adobe Premiere Pro</FeatureLink>, familiar with <FeatureLink link="https://www.figma.com">Figma</FeatureLink></li>
+                <li># Working with databases, I have been using <FeatureLink link="https://www.mongodb.com">MongoDB</FeatureLink>, <FeatureLink link="https://firebase.google.com/products/realtime-database">Firebase Realtime Database</FeatureLink> and <FeatureLink link="https://www.postgresql.org">PostgreSQL</FeatureLink></li>
+                <li># I'm experienced working with such frameworks as <FeatureLink link="https://nodejs.org">NodeJS</FeatureLink>(<FeatureLink link="https://expressjs.com/ru/">express</FeatureLink>) and <FeatureLink link="https://www.djangoproject.com">Django</FeatureLink>. I can implement a server with the following base functionality: routing, <FeatureLink link="https://restfulapi.io">REST API</FeatureLink>, simple DB, interactions with <FeatureLink link="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">cookies</FeatureLink></li>
                 <li># I've been working with data storage services of Amazon(<FeatureLink link="https://docs.amazonaws.cn/en_us/AmazonS3/latest/userguide/Welcome.html">AWS S3</FeatureLink>) and <FeatureLink link="https://firebase.google.com/products/storage">Firebase Storage</FeatureLink></li>
                 <li># I work with <FeatureLink link="https://git-scm.com">Git</FeatureLink> and <FeatureLink link="https://www.docker.com">Docker</FeatureLink></li>
                 <li># I can read documentation in English</li>
@@ -76,6 +76,21 @@ export const projectsText = {
             <span>Currently, there are no uploaded projects, yet</span>
             <code>It will take some time to revive the projects</code>
         </>
+    }
+}
+
+export const navText = {
+    mainLink: {
+        ru: "Главная",
+        en: "Home"
+    },
+    aboutLink: {
+        ru: "Обо мне",
+        en: "About"
+    },
+    projectsLink: {
+        ru: "Проекты",
+        en: "Projects"
     }
 }
 
@@ -103,6 +118,7 @@ const pageText = {
     mainText,
     aboutText,
     projectsText,
+    navText,
     defineLangText
 }
 

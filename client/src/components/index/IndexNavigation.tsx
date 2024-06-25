@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { defineLangText, navText } from '../../data/pageText'
 
 function IndexNavigation() {
   return (
@@ -6,17 +7,17 @@ function IndexNavigation() {
       <NavLink
         className='index-navigation__button'
         to='/'>
-         Главная
+         { defineLangText(navText.mainLink) }
       </NavLink>
       <NavLink
         className='index-navigation__button'
         to='/about'>
-        Обо мне
+        { defineLangText(navText.aboutLink ) }
       </NavLink>
       <NavLink
         className='index-navigation__button'
         to='/projects'>
-        Проекты
+        { defineLangText(navText.projectsLink) }
       </NavLink>
     </nav>
   )
