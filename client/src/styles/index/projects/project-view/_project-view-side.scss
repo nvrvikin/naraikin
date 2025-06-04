@@ -1,0 +1,44 @@
+.project-view-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 100%;
+    //margin-right: 2rem;
+    background-color: #efefef;
+    cursor: pointer;
+
+    @include phone {
+        width: 100%;
+        height: 42px;
+    }
+
+    .project-view-side__bar {
+        //display: flex;
+        width: 6px;
+        height: 200px;
+        //height: 100%;
+        background-color: #f0952a;
+        transition: .3s;
+    }
+        
+    &:hover {
+        .project-view-side__bar {
+            height: 120px;
+        }
+    }
+
+    @include phone {
+        .project-view-side__bar {
+            width: 200px;
+            height: 6px;
+        }
+
+        &:hover {
+            .project-view-side__bar {
+                width: 120px;
+                height: 6px;
+            }
+        }
+    }
+}

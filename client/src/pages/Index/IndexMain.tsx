@@ -2,6 +2,9 @@ import IndexLayout from '../../components/index/IndexLayout'
 import LogoIcon from '../../components/Icons/LogoIcon'
 import { Helmet } from 'react-helmet'
 import { defineLangText, mainText } from '../../data/pageText'
+import IconGithub from '../../assets/icons/IconGithub'
+import IconTelegram from '../../assets/icons/IconTelegram'
+import IconHH from '../../assets/icons/IconHH'
 
 function IndexMain() {
   return (
@@ -26,23 +29,24 @@ function IndexMain() {
     		  	  	href="https://github.com/nvrvikin"
     		  	  	target="_blank"
     		  	  	rel="noopener noreferrer">
-    		  	  	GitHub
+    		  	  	<IconGithub className='icon-link__smaller' />
+    		  	  	<IconGithub className='icon-link__larger' />
     		  	</a>
-    		  	|
-    		  	<a
-    		  	  	className="icon-link icon-link_vk"
-    		  	  	href="https://vk.com/nvrvikin"
-    		  	  	target="_blank"
-    		  	  	rel="noopener noreferrer">
-    		  	  	VK
-    		  	</a>
-    		  	|
     		  	<a
     		  	  	className="icon-link icon-link_tg"
     		  	  	href="https://t.me/nvrvikin/"
     		  	  	target="_blank"
     		  	  	rel="noopener noreferrer">
-    		  		Telegram
+    		  		<IconTelegram className='icon-link__smaller' />
+    		  		<IconTelegram className='icon-link__larger'/>
+    		  	</a>
+				<a
+    		  	  	className="icon-link icon-link_hh"
+    		  	  	href="https://barnaul.hh.ru/resume/d649729cff0e08e3730039ed1f5a6350555045"
+    		  	  	target="_blank"
+    		  	  	rel="noopener noreferrer">
+    		  		<IconHH className='icon-link__smaller' />
+    		  		<IconHH className='icon-link__larger'/>
     		  	</a>
     		</div>
       </IndexLayout>

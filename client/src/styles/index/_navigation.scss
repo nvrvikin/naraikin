@@ -14,8 +14,6 @@
 
     .index-navigation__button {
         display: flex;
-        //transform-origin: 0 0;
-        transform: scaleX(0.8);
         color: #ffffff5b;
         padding: 0.2rem 0.5rem;
         margin: 0 4px;
@@ -38,7 +36,6 @@
         
         &:hover {
             color: #ffffff;
-            transform: scaleX(1);
             
             &::after {
                 background-color: #000000;
@@ -48,8 +45,6 @@
 
         &.active {
             color: #ffffffce;
-            transform: scaleX(1);
-
 
             &::after {
                 background-color: #000000ce;

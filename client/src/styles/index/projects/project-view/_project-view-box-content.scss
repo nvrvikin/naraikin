@@ -1,0 +1,43 @@
+.project-view-box-content {
+    width: 780px;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        width: 512px;
+    }
+
+    @include phone {
+        width: calc(100% - 4rem);
+    }
+
+    .project-view-box-content__top {
+        display: flex;
+        margin-bottom: 0.5rem;
+
+        @include phone {
+            flex-direction: column;
+        }
+
+        .project-view-box-content-top__info {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .project-view__title {
+        padding: 0;
+        margin: 0;
+        color: #f0952a;
+        font-weight: 500;
+        font-size: 1.85rem;
+    }
+
+    .project-view__description {
+        color: #252525;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+}

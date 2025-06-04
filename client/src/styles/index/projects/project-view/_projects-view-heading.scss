@@ -1,0 +1,52 @@
+.project-view-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .project-view-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 4.5rem;
+        height: 100%;
+
+        &__link {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &_inactive {
+                cursor: default;
+                pointer-events: none;
+
+                .project-view-links__icon {
+                    fill: #84898f;
+                }
+            }
+        }
+
+        &__icon {
+            height: 1.8rem;
+            width: 1.8rem;
+            transition: .2s ease all;
+
+            &_github {
+                fill: #24292f;
+
+                &:hover {
+                    fill: #4135eb;
+                }
+            }
+
+            &_global {
+                fill: #24292f;
+
+                &:hover {
+                    fill: #a337dd;
+                }
+            }
+        }
+    }
+}

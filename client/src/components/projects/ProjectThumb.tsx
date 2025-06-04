@@ -1,50 +1,57 @@
-import { useEffect, useRef, useState, /*useContext*/ } from 'react'
+import { useContext, useEffect, useRef, useState, /*useContext*/ } from 'react'
 //import { LangContext } from '../../contexts/LangContext';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 //import langList from '../../data/langList';
 
-/*
-interface ProjectThumpProps {
+import { IProject } from '../../data/projectsList';
+import { ITag } from '../../data/tagsList';
+import { ProjectContext } from '../../contexts/ProjectContext';
+import { defineTagLangText } from '../helpers/defineLangText';
 
+
+interface IProjectThumpProps {
+    project: IProject
 }
-*/
 
-function ProjectThumb() {
+
+function ProjectThumb({ project }: IProjectThumpProps)  {
     const tagsUlRef = useRef(null);
     const containerRef = useRef(null);
     const titleBoxRef = useRef(null);
     const titleRef = useRef(null);
 
+    const { setCurrentProject } = useContext(ProjectContext)
+
     /*const { lang, updateLang } = useContext(LangContext)*/
 
-    const [title, /*setTitle*/] = useState('...');
-    const [description, /*setDescription*/] = useState('...');
-    const [link, /*setLink*/] = useState('#');
-    const [isExternalLink, /*setIsExternalLink*/] = useState(false);
-    const [image, /*setImage*/] = useState(null);
-    const [tags, /*setTags*/] = useState([]);
+    const [title, setTitle] = useState('...');
+    const [description, setDescription] = useState<string | React.ReactNode>('...');
+    const [/*link*/, setLink] = useState('#');
+    //const [isExternalLink, /*setIsExternalLink*/] = useState(false);
+    const [/*image*/, setImage] = useState('');
+    const [tags, setTags] = useState<ITag[]>([]);
 
     const [isHidden, /*setIsHidden*/] = useState(false);
 
-    const [showImage, setShowImage] = useState(false);
+    const [/*showImage*/, setShowImage] = useState(false);
     
     const [showInfo, /*setShowInfo*/] = useState(false);
     const [currentInfo, /*setCurrentInfo*/] = useState('');
 
-    /*const [shortTitle, setShortTitle] = useState('...');*/
-    const [currentTitle, /*setCurrentTitle*/] = useState('...');
+    const [shortTitle, setShortTitle] = useState('...');
+    const [/*currentTitle*/, /*setCurrentTitle*/] = useState('...');
 
     const [offsetTitle, setOffsetTitle] = useState(0);
     const [isOver, setIsOver] = useState(false);
     const [canMoveTitle, /*setCanMoveTitle*/] = useState(false);
     
-    const [canForth, /*setCanForth*/] = useState(true);
-    const [canBack, /*setCanBack*/] = useState(true);
-    const [offsetTags, setOffsetTags] = useState(0);
-    const [ulWidth, /*setUlWidth*/] = useState(0);
-    const [containerWidth, /*setContainerWidth*/] = useState(0);
+    //const [canForth, /*setCanForth*/] = useState(true);
+    const [/*canBack*/, /*setCanBack*/] = useState(true);
+    const [offsetTags, /*setOffsetTags*/] = useState(0);
+    //const [ulWidth, /*setUlWidth*/] = useState(0);
+    //const [containerWidth, /*setContainerWidth*/] = useState(0);
 
-    const [offsetStep, /*setOffsetStep*/] = useState(150);
+    //const [offsetStep, /*setOffsetStep*/] = useState(150);
 
     function handleMouseEnter () {
         setIsOver(true);
@@ -68,7 +75,7 @@ function ProjectThumb() {
             }
         }
     }
-
+/*
     function tagsForth() {
         if(canForth){
             if(offsetTags + offsetStep < ulWidth - containerWidth) {
@@ -78,98 +85,79 @@ function ProjectThumb() {
             }
         }
     }
-
+*/
+/*
     function tagsBack() {
         if(offsetTags - offsetStep >= 0) setOffsetTags(offsetTags - offsetStep);
         else setOffsetTags(0);
     }
-
+*/
     function showTags() {
 
         if(tags) {
             return tags.map((tag, idx) => {
-                console.log(tag)
-                /*let tagLang;
-                switch(lang) {
-                    case langList.ru:
-                        tagLang = tag.ru
-                        break;
-                    case langList.eng:
-                        tagLang = tag.eng
-                        break;
-                    default:
-                        tagLang = tag.eng
-                        break;
-                }*/
+
                 return (
                     <li key={idx}
                         className='project-thumb__tag'
                         //onMouseEnter={ () => handleTagMouseEnter(tagLang.info) }
                         //onMouseLeave={ handleTagMouseLeave }
                         > 
-                        { "Тэг"/*tagLang.value*/}
+                        { defineTagLangText(tag).value }
                     </li>
                 )
             });
         }
     }
 
-    useEffect(() => {
+    function openProject() {
+        console.log("open project")
+        if(project && setCurrentProject) {
+            setCurrentProject(project.id)
+        }
+    }
 
-    }, [])
+    useEffect(() => {
+        if(project) {
+            setTitle(project.title)
+            setShortTitle(project.title)
+            setDescription(project.description)
+            setLink(project.link)
+            setImage(project.image)
+            setTags(project.tags)
+        }
+    }, [project])
 
     return (
         <div className={`project-thumb ${ isHidden ? 'project-thumb_hidden' : '' }`}
             onMouseEnter={ handleMouseEnter }
             onMouseLeave={ handleMouseLeave }
             onTransitionEnd={ handleTransitionEnd }>
+                <div className='project-thumb__side' onClick={ openProject }>
+                    <div className='project-thumb__side-bar' />
+                </div>
             <div className='project-thumb__top'>
-                <div className={`project-thumb__link-popup ${showImage ? 'project-thumb__link-popup_show' : ''}`} style={{ backgroundImage: `url('${image}')`}} />
                 <div className="project-thumb__main-content">
                     <div className="project-thumb__info-wrapper">
-                        <div ref={ titleBoxRef } className='project-thumb__title-box'>
-                            {
-                                !isExternalLink ?
-                                (<Link ref={ titleRef }
-                                    className="project-thumb__title"
-                                    to={link}
-                                    style={{ transform: (`translate(-${offsetTitle}px, 0px)`) }} 
-                                    onMouseEnter={() => setShowImage(true)}
-                                    onMouseLeave={() => setShowImage(false)}>
-                                    {currentTitle}
-                                </Link>)
-                                :
-                                (<a ref={ titleRef }
-                                    className="project-thumb__title"
-                                    href={link}
-                                    style={{ transform: (`translate(-${offsetTitle}px, 0px)`) }}
-                                    onMouseEnter={() => setShowImage(true)}
-                                    onMouseLeave={() => setShowImage(false)}>
-                                    {currentTitle}
-                                </a>)
-                            }
+                        <div ref={ titleBoxRef } className='project-thumb__title-box' onClick={ openProject }>
+                            <span ref={ titleRef }
+                                className="project-thumb__title"
+                                onMouseEnter={() => setShowImage(true)}
+                                onMouseLeave={() => setShowImage(false)}>
+                                {shortTitle}
+                            </span>
                         </div>
                         <p className="project-thumb__description">{description}</p>
                     </div>
                     
                 </div>
-                <div className='project-thumb__side' onClick={ () => alert('click')/*showView*/ }>
-                    <div className='project-thumb__side-bar' />
-                </div>
-            </div>
-            <div className="project-thumb__tags-wrapper">
-                <div onClick={tagsForth} className={'project-thumb__tags-arrow project-thumb__tags-arrow_forth' + (!canForth ? ' project-thumb__tags-arrow_disabled' : '')}>
-                   <div className="project-thumb__tags-arrow-bar project-thumb__tags-arrow-bar_first"></div>
-                    <div className="project-thumb__tags-arrow-bar project-thumb__tags-arrow-bar_second"></div>
-                </div>
-                <div onClick={tagsBack} className={'project-thumb__tags-arrow project-thumb__tags-arrow_back' + (!canBack ? ' project-thumb__tags-arrow_disabled' : '')}>
-                    <div className="project-thumb__tags-arrow-bar project-thumb__tags-arrow-bar_first"></div>
-                    <div className="project-thumb__tags-arrow-bar project-thumb__tags-arrow-bar_second"></div>
-                </div>
-                <div ref={containerRef} className="project-thumb__tags-container">
-                    <ul ref={tagsUlRef} className="project-thumb__tags-list" style={{ transform: (`translate(-${offsetTags}px, 0px)`) }}>
-                        {showTags()}
-                    </ul>
+            
+                <div className="project-thumb__tags-wrapper">
+                    <div ref={containerRef} className="project-thumb__tags-container">
+                        <ul ref={tagsUlRef} className="project-thumb__tags-list" style={{ transform: (`translate(-${offsetTags}px, 0px)`) }}>
+                            {showTags()}
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div className={`project-thumb__tag-info ${showInfo ? 'project-thumb__tag-info_show' : ''}`}>{ currentInfo }</div>

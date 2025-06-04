@@ -1,0 +1,36 @@
+.project-view-display {
+    color: #4f4f4f;
+    font-size: 1rem;
+    margin-left: 2rem;
+    
+    @include phone {
+        margin: 0;
+    }
+
+    &__image {
+        width: 320px;
+        height: 180px;
+        background-color: #cf8dd8;
+        
+        @include phone {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+        }
+    }
+
+
+    &__info {
+        display: flex;
+        justify-content: flex-end;
+
+        .project-view-display-info__item {
+            padding: .5rem;
+        }
+    }
+
+    .project-view-display__image {
+        background-position: center;
+        background-size: cover;
+    }
+}

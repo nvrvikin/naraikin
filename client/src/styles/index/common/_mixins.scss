@@ -24,6 +24,18 @@
 }
 */
 
+@mixin desktop {
+    @media (min-width: #{$screen-desktop}) and (max-width: #{$screen-large - 1px}){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$screen-tablet}) and (max-width: #{$screen-desktop - 1px}) {
+        @content;
+    }
+}
+
 @mixin phone {
     @media (max-width: #{$screen-tablet - 1px}) {
         @content;

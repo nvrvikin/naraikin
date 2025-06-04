@@ -4,17 +4,24 @@
     right: 7rem;
     z-index: 5;
     padding: 0.8rem;
-    border: 2px solid #ffffff;
-    //border: 3px solid #000000;
+    border: 3px solid #ffffff;
+    border-radius: 2rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 2.5rem;
     width: 2.5rem;
-    transition: .5s ease;
+    transition: 1s ease;
     opacity: .3;
     cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
      
     @include phone {
         top: 1.5rem;
@@ -22,7 +29,7 @@
     }
 
     &.lang-button_dark {
-        border: 2px solid #000000;
+        border: 3px solid #000000;
 
         .lang-button__wrapper {
 
@@ -69,7 +76,7 @@
             left: -10px;
             bottom: -19px;
             transform: translateY(0);
-            transition: .3s ease;
+            transition: .8s ease;
             margin: 0;
             padding: 0;
             opacity: 0;
@@ -84,10 +91,13 @@
                 width: 100%;
                 padding: 5px 0;
                 transition: .5s ease;
+
+                &:active {
+                    color: #64ffd8
+                }
                 
                 &:hover {
                     color: #ffffff;
-                    
                 }
             }
         }
@@ -99,7 +109,7 @@
 
         .lang-button__list {
             opacity: 1;
-            transform: translateY(100%);
+            transform: translateY(calc(100% - 3px));
         }
     }
 }

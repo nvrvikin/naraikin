@@ -1,14 +1,11 @@
-
 import React, { createContext, useState, useEffect } from 'react'
 
 import langList from '../data/langList'
-
 
 export interface ILangContext {
     lang?: string,
     updateLang?: (newTheme: string) => void,
 }
-
 
 const STORAGE_KEY = 'lang'
 

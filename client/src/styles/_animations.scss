@@ -1,19 +1,18 @@
 @keyframes Bg-grade-light {
     0% {
-      /*background-color: #ce8994;*/
-      background-color: #aa575e;
+      background-color: #aa5773;
     }
     25%{
-      background-color: #919191;
+      background-color: #6d65b4;
     }
     50% {
-      background-color: #bb5dbb;
+      background-color: #8d5dbb;
     }
     75% {
-      background-color: #8e82b8;
+      background-color: #6fb9b5;
     }
     100% {
-      background-color: #aa575e;
+      background-color: #aa577e;
     }
   }
 
@@ -38,19 +37,19 @@
 
   @keyframes triangle-grade {
     0% {
-        border-top: 60px solid #aa575e;
+        border-top: 60px solid #696ab8;
     }
     25%{
-        border-top: 60px solid #919191;
+        border-top: 60px solid #68beb0;
     }
     50% {
-        border-top: 60px solid #bb5dbb;
+        border-top: 60px solid #815dbb;
     }
     75% {
-        border-top: 60px solid #8e82b8;
+        border-top: 60px solid #cfa86e;
     }
     100% {
-        border-top: 60px solid #aa575e;
+        border-top: 60px solid #ad5975;
     }
 }
 
@@ -82,4 +81,10 @@
     0% {
         height: 0px;
     }
+}
+
+@keyframes text-burning {
+  0% {
+    
+  }
 }

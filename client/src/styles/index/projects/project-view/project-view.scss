@@ -1,0 +1,59 @@
+@import "./projects-view-heading";
+@import "./project-view-display";
+@import "./project-view-tags";
+@import "./project-view-box-content";
+@import "./project-view-features";
+@import "./project-view-side";
+
+.project-view {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    z-index: 6;
+    pointer-events: none;
+
+    &.project-view_show {
+        opacity: 1;
+        pointer-events: initial;
+
+        .project-view__box {
+            transform: translateY(0);
+        }
+    }
+
+    .project-view__overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000070;
+        cursor: pointer;
+    }
+    
+    .project-view__box{
+        background-color: #ffffff;
+        display: flex;
+        //flex-direction: column;
+        //justify-content: center;
+        //align-items: center;
+        //width: 800px;
+        height: 500px;
+        transition: .5s ease;
+        position: relative;
+        //transform: scale(0.2, 0.4);
+
+        @include phone {
+            height: 80%;
+            width: 80%;
+            flex-direction: column;
+        }
+    }
+}
