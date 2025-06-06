@@ -64,7 +64,7 @@ export const aboutText = {
 
 export const projectsText = {
     pageTitle: {
-        ru: "Проект",
+        ru: "Проекты",
         en: "Projects"
     },
     hint: {

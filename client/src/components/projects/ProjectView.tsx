@@ -82,13 +82,17 @@ function ProjectView({ /*project, isShown, closeView*/ }) {
                     <div className="project-view-box-content__top">
                     <div className="project-view-box-content-top__info">
                         <div className="project-view-heading">
-                            <h2 className='project-view__title'>{ title }</h2>
+                            <a target="_blank" href={ link } className='project-view__title'>{ title }</a>
                             <ProjectViewLinks link={ link } hasLink={ hasLink } gLink={ gLink } hasGLink={ hasGLink } />
                         </div>
                         <p className='project-view__description'>{ desc }</p>    
                     </div>
                         <div className="project-view-display">
-                            <div className="project-view-display__image" style={{backgroundImage: `url(${image})`}} />
+                            <div className="project-view-display__image" style={{backgroundImage: `url(${image})`}}>
+                                <a className="project-view-display__image-link" target="_blank" href={ link }>
+                                    <span>Перейти</span>
+                                </a>
+                            </div>
                             <div className="project-view-display__info">
                                 <span className="project-view-display-info__item">Не закончен</span>
                                 <span className="project-view-display-info__item">Частично адаптирован</span>
