@@ -16,6 +16,9 @@ if(process.env.NODE_ENV === 'production'){
     app.get('/files/vgsale_1.csv', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'files', 'vgsale_1.csv'))
     })
+    app.get('/files/sunglasses-gm.png', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'files', 'sunglasses-gm.png'))
+    })
 
     // Setting static folder
     app.use(express.static('client/dist'));
